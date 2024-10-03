@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Profile - Career Spark</title>
+    <style>
+        /* General body and background */
+        body {
+            background: url('images/virtual-assistant-circle-background-purple-gradient-disruptive-technology.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #FFFFFF;
+            padding: 20px;
+        }
+
+        /* Logo styling */
+        .logo {
+            color: #FF5D92;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: rgba(0, 0, 0, 0.8);
+            min-width: 150px;
+            z-index: 1;
+            padding: 5px 0;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block;
+        }
+
+        .dropdown li {
+            margin: 0;
+        }
+
+        .dropdown li a {
+            padding: 10px;
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .dropdown li a:hover {
+            background-color: #FF5D92;
+        }
+
+        /* Button styling */
+        button, .cta-button {
+            background-color: #FF5D92;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 16px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover, .cta-button:hover {
+            background-color: #F08E47;
+            box-shadow: 0 0 15px #F08E47;
+        }
+
+        /* Form styling */
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        input[type="text"], input[type="email"], input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #FF5D92;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #F08E47;
+        }
+
+        .welcome-section {
+            text-align: center;
+            padding: 50px 20px;
+            flex-grow: 1;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #FF5D92;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        footer {
+            background: transparent;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            border-top: 3px solid #FF5D92;
+        }
+    </style>
+    <script>
+        function redirectToAddskills() {
+            window.location.href = "Addskills.html"; // Redirect to the exploreOpportunities page
+        }
+    </script>
+</head>
+<body>
+
+<header>
+    <div class="logo">Career Spark</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li>
+                <a href="#">Explore Opportunities</a>
+                <ul class="dropdown">
+                    <li><a href="#">Career Guidance</a></li>
+                    <li><a href="#">Job Matching</a></li>
+                    <li><a href="#">Mentorship</a></li>
+                    <li><a href="#">Skill Training</a></li>
+                    <li><a href="#">Freelancing</a></li>
+                    <li><a href="#">Entrepreneurship</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="welcome-section">
+    <h1>Create Your Profile</h1>
+    <p>Fill in the details below to get started!</p>
+    <div class="form-container">
+        <form onsubmit="redirectToAddskills(); return false;">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" required>
+
+            <input type="submit" value="Create Profile">
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Career Spark. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

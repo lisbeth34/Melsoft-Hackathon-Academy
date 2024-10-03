@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Career Spark</title>
+    <style>
+        /* General body and background */
+        body {
+            background: url('images/virtual-assistant-circle-background-purple-gradient-disruptive-technology.jpg') no-repeat center center fixed; /* Add your image path here */
+            background-size: cover; /* Cover the entire background */
+            color: #FFFFFF; /* White text */
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure footer stays at the bottom */
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #FFFFFF;
+            padding: 20px;
+        }
+
+        /* Logo styling */
+        .logo {
+            color: #FF5D92; /* Neon pink/orange for the logo */
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin-left: 20px; /* Space between navigation items */
+        }
+
+        nav ul li a {
+            color: #FFFFFF; /* White text for links */
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        /* Dropdown styling */
+        .dropdown {
+            display: none;
+            position: absolute;
+            background-color: transparent; /* Transparent background for dropdown */
+            min-width: 150px;
+            z-index: 1;
+        }
+
+        nav ul li:hover .dropdown {
+            display: block; /* Show dropdown on hover */
+        }
+
+        .dropdown li {
+            margin: 0; /* Remove margin for dropdown items */
+        }
+
+        /* Button styling */
+        button, .cta-button {
+            background-color: #FF5D92; /* Neon pink */
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 16px;
+            margin: 10px 0; /* Space between buttons */
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover, .cta-button:hover {
+            background-color: #F08E47; /* Orange hover effect */
+            box-shadow: 0 0 15px #F08E47; /* Glowing effect */
+        }
+
+        /* Login form styling */
+        .login-section {
+            text-align: center;
+            padding: 50px 20px;
+            flex-grow: 1; /* Allow login section to expand */
+        }
+
+        /* Form input styling */
+        input[type="email"], input[type="password"] {
+            width: 300px; /* Set a width for input fields */
+            padding: 10px;
+            margin: 10px 0; /* Space between inputs */
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        /* Footer styling */
+        footer {
+            background: transparent; /* No background color for footer */
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            border-top: 3px solid #FF5D92; /* Neon pink top border */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Career Spark</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li>
+                <a href="#">Explore Opportunities</a>
+                <ul class="dropdown">
+                    <li><a href="#">Career Guide</a></li>
+                    <li><a href="#">Job Matching</a></li>
+                    <li><a href="#">Mentorship</a></li>
+                    <li><a href="#">Skill Training</a></li>
+                    <li><a href="#">Freelancing</a></li>
+                    <li><a href="#">Entrepreneurship</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="login-section">
+    <h1>Login to Your Account</h1>
+    <form id="loginForm">
+        <div>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+        </div>
+        <div>
+            <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+        <button type="submit">Log In</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Career Spark. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById('loginForm').addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        // Perform form validation if needed
+        var email = document.getElementById('email').value;
+        var password = document.getElementById('password').value;
+
+        if(email && password) {
+            // Redirect to dashboard.html after validation
+            window.location.href = "dashboard.html";
+        } else {
+            alert("Please fill in both fields.");
+        }
+    });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Skills - Career Spark</title>
+    <style>
+        /* General body and background */
+        body {
+            background: url('images/virtual-assistant-circle-background-purple-gradient-disruptive-technology.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            color: #FFFFFF;
+        }
+
+        /* Logo styling */
+        .logo {
+            font-size: 28px;
+            font-weight: bold;
+            color: #FF5D92;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        /* Button styling */
+        button, .cta-button {
+            background-color: #FF5D92;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover, .cta-button:hover {
+            background-color: #F08E47;
+            box-shadow: 0 0 15px #F08E47;
+        }
+
+        /* Form container */
+        .form-container {
+            max-width: 600px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        /* Input styling */
+        input[type="text"], select {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        /* Submit button styling */
+        input[type="submit"] {
+            background-color: #FF5D92;
+            color: white;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #F08E47;
+        }
+
+        /* Footer styling */
+        footer {
+            background: transparent;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            border-top: 3px solid #FF5D92;
+            margin-top: auto; /* Push footer to the bottom */
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #FF5D92;
+            text-align: center;
+        }
+
+        p {
+            text-align: center;
+            font-size: 20px;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Career Spark</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="welcome-section">
+    <h1>Add Your Skills</h1>
+    <p>Enter the skills that you want to showcase in your profile.</p>
+
+    <div class="form-container">
+        <!-- Form redirects to ExploreOpportunities.html after submission -->
+        <form action="ExploreOpportunities.html" method="GET">
+            <label for="skill">Skill:</label>
+            <input type="text" id="skill" name="skill" placeholder="Enter skill" required>
+
+            <label for="proficiency">Proficiency Level:</label>
+            <select id="proficiency" name="proficiency" required>
+                <option value="Beginner">Beginner</option>
+                <option value="Intermediate">Intermediate</option>
+                <option value="Advanced">Advanced</option>
+                <option value="Expert">Expert</option>
+            </select>
+
+            <input type="submit" value="Add Skill">
+        </form>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Career Spark. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

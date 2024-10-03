@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Mentors - Career Spark</title>
+    <style>
+        /* General body and background */
+        body {
+            background: url('images/virtual-assistant-circle-background-purple-gradient-disruptive-technology.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #FFFFFF;
+            padding: 20px;
+        }
+
+        /* Logo styling */
+        .logo {
+            color: #FF5D92;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        /* Content section styling */
+        .section-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #FF5D92;
+        }
+
+        h3 {
+            font-size: 28px;
+            color: #FF5D92;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        /* Mentor card styling */
+        .mentor-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s;
+        }
+
+        .mentor-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+        }
+
+        .mentor-name {
+            font-size: 24px;
+            color: #FF5D92;
+        }
+
+        .mentor-title {
+            font-size: 20px;
+            color: #FFFFFF;
+        }
+
+        .mentor-description {
+            font-size: 16px;
+            color: #FFFFFF;
+        }
+
+        .contact-button {
+            background-color: #FF5D92;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background 0.3s ease;
+        }
+
+        .contact-button:hover {
+            background-color: #F08E47;
+            box-shadow: 0 0 15px #F08E47;
+        }
+
+        /* Footer styling */
+        footer {
+            background: transparent;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            border-top: 3px solid #FF5D92;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Career Spark</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Explore Opportunities</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="section-container">
+    <h2>Browse Mentors</h2>
+    <p>Connect with experienced professionals who can guide you in your career journey. Browse through our list of mentors below.</p>
+
+    <!-- Mentor Cards -->
+    <div class="mentor-card">
+        <div class="mentor-name">Jane Doe</div>
+        <div class="mentor-title">Senior Software Engineer</div>
+        <p class="mentor-description">Jane has over 10 years of experience in software development, specializing in web applications.</p>
+        <button class="contact-button">Contact Mentor</button>
+    </div>
+
+    <div class="mentor-card">
+        <div class="mentor-name">John Smith</div>
+        <div class="mentor-title">Marketing Specialist</div>
+        <p class="mentor-description">John has a proven track record in digital marketing strategies and brand development.</p>
+        <button class="contact-button">Contact Mentor</button>
+    </div>
+
+    <div class="mentor-card">
+        <div class="mentor-name">Alice Johnson</div>
+        <div class="mentor-title">Financial Analyst</div>
+        <p class="mentor-description">With 8 years of experience in financial analysis, Alice helps individuals and businesses optimize their finances.</p>
+        <button class="contact-button">Contact Mentor</button>
+    </div>
+
+    <div class="mentor-card">
+        <div class="mentor-name">Bob Brown</div>
+        <div class="mentor-title">Project Manager</div>
+        <p class="mentor-description">Bob has successfully managed multiple projects in various sectors, focusing on team collaboration and delivery.</p>
+        <button class="contact-button">Contact Mentor</button>
+    </div>
+
+    <!-- Add more mentor cards as needed -->
+</section>
+
+<footer>
+    <p>&copy; 2024 Career Spark. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

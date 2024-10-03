@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Listings - Career Spark</title>
+    <style>
+        /* General body and background */
+        body {
+            background: url('images/virtual-assistant-circle-background-purple-gradient-disruptive-technology.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #FFFFFF;
+            padding: 20px;
+        }
+
+        /* Logo styling */
+        .logo {
+            color: #FF5D92;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        /* Button styling */
+        button, .cta-button {
+            background-color: #FF5D92;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 16px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover, .cta-button:hover {
+            background-color: #F08E47;
+            box-shadow: 0 0 15px #F08E47;
+        }
+
+        /* Content section styling */
+        .section-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #FF5D92;
+        }
+
+        h3 {
+            font-size: 28px;
+            color: #FF5D92;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        .job-listings {
+            margin-top: 20px;
+        }
+
+        .job-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .job-title {
+            font-size: 24px;
+            color: #FF5D92;
+            margin: 0;
+        }
+
+        .job-company {
+            font-size: 20px;
+            color: #FFFFFF;
+            margin: 5px 0;
+        }
+
+        .job-description {
+            font-size: 16px;
+            color: #FFFFFF;
+            margin: 10px 0;
+        }
+
+        .job-location {
+            font-size: 16px;
+            color: #FF5D92;
+        }
+
+        .apply-button {
+            background-color: #FF5D92;
+            color: #FFFFFF;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        .apply-button:hover {
+            background-color: #F08E47;
+        }
+
+        /* Footer styling */
+        footer {
+            background: transparent;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            border-top: 3px solid #FF5D92;
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Career Spark</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li>
+                <a href="#">Explore Opportunities</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="section-container">
+    <h2>Job Listings</h2>
+    <p>Explore a curated list of job opportunities based on your profile. Jobs are matched by your location, skills, and interests.</p>
+
+    <div class="job-listings">
+        <!-- Job Item 1 -->
+        <div class="job-item">
+            <h3 class="job-title">Front-End Developer</h3>
+            <p class="job-company">ABC Tech Solutions</p>
+            <p class="job-description">We are looking for a skilled Front-End Developer to join our team. You will be responsible for building the client-side of our web applications.</p>
+            <p class="job-location">Location: Remote</p>
+            <a href="#" class="apply-button">Apply Now</a>
+        </div>
+
+        <!-- Job Item 2 -->
+        <div class="job-item">
+            <h3 class="job-title">Digital Marketing Specialist</h3>
+            <p class="job-company">XYZ Marketing Agency</p>
+            <p class="job-description">Join our marketing team as a Digital Marketing Specialist. You will create and manage marketing campaigns across various channels.</p>
+            <p class="job-location">Location: Capetown</p>
+            <a href="#" class="apply-button">Apply Now</a>
+        </div>
+
+        <!-- Job Item 3 -->
+        <div class="job-item">
+            <h3 class="job-title">Data Analyst</h3>
+            <p class="job-company">Data Insights Inc.</p>
+            <p class="job-description">We are seeking a Data Analyst to help us make data-driven decisions. The ideal candidate should have experience with data visualization tools.</p>
+            <p class="job-location">Location: Johannesburg</p>
+
+            <a href="#" class="apply-button">Apply Now</a>
+        </div>
+
+        <!-- Job Item 4 -->
+        <div class="job-item">
+            <h3 class="job-title">Project Manager</h3>
+            <p class="job-company">Innovate Solutions</p>
+            <p class="job-description">Looking for an experienced Project Manager to oversee projects from inception to completion. Strong leadership skills are required.</p>
+            <p class="job-location">Location: Port Elizabeth</p>
+            <a href="#" class="apply-button">Apply Now</a>
+        </div>
+
+        <!-- Job Item 5 -->
+        <div class="job-item">
+            <h3 class="job-title">UI/UX Designer</h3>
+            <p class="job-company">Creative Studio</p>
+            <p class="job-description">We are looking for a UI/UX Designer who can create intuitive and user-friendly designs for our web and mobile applications.</p>
+            <p class="job-location">Location: Remote</p>
+            <a href="#" class="apply-button">Apply Now</a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Career Spark. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

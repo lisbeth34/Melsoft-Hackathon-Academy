@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start-up Resources - Career Spark</title>
+    <style>
+        /* General body and background */
+        body {
+            background: url('images/virtual-assistant-circle-background-purple-gradient-disruptive-technology.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #FFFFFF;
+            padding: 20px;
+        }
+
+        /* Logo styling */
+        .logo {
+            color: #FF5D92;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        /* Button styling */
+        button, .cta-button {
+            background-color: #FF5D92;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 16px;
+            margin: 10px 5px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover, .cta-button:hover {
+            background-color: #F08E47;
+            box-shadow: 0 0 15px #F08E47;
+        }
+
+        /* Content section styling */
+        .section-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #FF5D92;
+        }
+
+        h3 {
+            font-size: 28px;
+            color: #FF5D92;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        .resource-section {
+            margin-bottom: 40px;
+        }
+
+        .resource-section a {
+            display: inline-block;
+            color: #FF5D92;
+            text-decoration: none;
+            margin-top: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .resource-section a:hover {
+            text-decoration: underline;
+        }
+
+        /* Loading spinner styling */
+        .loading {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid #FF5D92;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* Footer styling */
+        footer {
+            background: transparent;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            border-top: 3px solid #FF5D92;
+            margin-top: auto;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Career Spark</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li>
+                <a href="#">Explore Opportunities</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="section-container">
+    <h2>Start-up Resources</h2>
+    <p>Access essential resources to start and grow your business, from business plan templates to funding guides and marketing strategies.</p>
+
+    <!-- Business Plan Templates -->
+    <div class="resource-section">
+        <h3>Business Plan Templates</h3>
+        <p>Kickstart your entrepreneurial journey by using these free business plan templates. Tailor them to suit your business needs and secure the funding you need to grow.</p>
+        <a href="#" id="downloadLink">Download Business Plan Templates</a>
+    </div>
+
+    <!-- Funding Options -->
+    <div class="resource-section">
+        <h3>Funding Options</h3>
+        <p>Discover a variety of funding options available for startups, including government grants, venture capital, and angel investors.</p>
+        <a href="#">Explore Funding Options</a>
+    </div>
+
+    <!-- Marketing Strategies -->
+    <div class="resource-section">
+        <h3>Marketing Strategies</h3>
+        <p>Learn how to effectively market your startup with strategies that target your audience, build your brand, and increase your customer base.</p>
+        <a href="#">Learn Marketing Strategies</a>
+    </div>
+
+    <!-- Legal and Compliance -->
+    <div class="resource-section">
+        <h3>Legal and Compliance</h3>
+        <p>Ensure your business is legally compliant with guidelines on registration, intellectual property protection, and other legal matters.</p>
+        <a href="#">View Legal and Compliance Resources</a>
+    </div>
+</section>
+
+<!-- Loading Spinner -->
+<div class="loading" id="loadingSpinner"></div>
+
+<footer>
+    <p>&copy; 2024 Career Spark. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById('downloadLink').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the actual download
+
+        // Show the loading spinner
+        const spinner = document.getElementById('loadingSpinner');
+        spinner.style.display = 'block';
+
+        // Hide the spinner after 3 seconds (simulate download time)
+        setTimeout(function() {
+            spinner.style.display = 'none';
+            alert('Download complete!');
+        }, 3000); // 3 seconds delay
+    });
+</script>
+
+</body>
+</html>

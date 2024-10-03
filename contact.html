@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Career Spark</title>
+    <style>
+        /* General body and background */
+        body {
+            background: url('images/virtual-assistant-circle-background-purple-gradient-disruptive-technology.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #FFFFFF;
+            padding: 20px;
+        }
+
+        /* Logo styling */
+        .logo {
+            color: #FF5D92;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        /* Content section styling */
+        .section-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #FF5D92;
+            text-align: center;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        /* Contact form styling */
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input, textarea {
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+
+        textarea {
+            background-color: #FFFFFF;
+            color: #000000;
+            resize: vertical;
+        }
+
+        button {
+            background-color: #FF5D92;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            font-size: 16px;
+            margin-top: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #F08E47;
+        }
+
+        /* Contact information styling */
+        .contact-info {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            margin: 5px 0;
+        }
+
+        /* Footer styling */
+        footer {
+            background: transparent;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            border-top: 3px solid #FF5D92;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Career Spark</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li>
+                <a href="#">Explore Opportunities</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="section-container">
+    <h2>Contact Us</h2>
+    <p>If you have any questions or need assistance, please fill out the form below or contact us directly.</p>
+
+
+    <form target="_blank" action="https://formsubmit.co/chitayalerato22@gmail.com" method="POST">
+        <!-- Ensure all form fields are included -->
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+        <!-- Add the _replyto field to get the sender's email -->
+        <input type="hidden" name="_replyto" value="{{email}}">
+        <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+    </form>
+
+    <div class="contact-info">
+        <h3>Contact Information</h3>
+        <p>Phone: +27 21 555 1234</p>
+        <p>Email: <a href="mailto:info@careerspark.com" style="color: #FF5D92;">info@careerspark.com</a></p>
+        <p>Location: South Africa</p>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Career Spark. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

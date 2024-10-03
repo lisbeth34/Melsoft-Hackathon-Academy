@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Spark</title>
+    <style>
+        /* General body and background */
+        body {
+            background: url('images/virtual-assistant-circle-background-purple-gradient-disruptive-technology.jpg') no-repeat center center fixed; /* Add your image path here */
+            background-size: cover; /* Cover the entire background */
+            color: #FFFFFF; /* White text */
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure footer stays at the bottom */
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #FFFFFF;
+            padding: 20px;
+        }
+
+        /* Logo styling */
+        .logo {
+            color: #FF5D92; /* Neon pink/orange for the logo */
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin-left: 20px; /* Space between navigation items */
+        }
+
+        nav ul li a {
+            color: #FFFFFF; /* White text for links */
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        /* Dropdown styling */
+        .dropdown {
+            display: none;
+            position: absolute;
+            top: 40px; /* Position the dropdown just below the parent item */
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent dark background */
+            padding: 10px 0; /* Padding for dropdown container */
+            min-width: 150px; /* Minimum width of dropdown */
+            z-index: 1;
+            border-radius: 5px;
+        }
+
+        .dropdown li {
+            margin: 0; /* Remove margin for dropdown items */
+            display: block; /* Ensure dropdown items are displayed as block */
+        }
+
+        .dropdown li a {
+            padding: 10px 20px;
+            display: block;
+            color: #FFFFFF;
+        }
+
+        .dropdown li a:hover {
+            background-color: #FF5D92; /* Neon pink hover effect */
+        }
+
+        nav ul li:hover .dropdown {
+            display: block; /* Show dropdown on hover */
+        }
+
+        /* Button styling */
+        button, .cta-button {
+            background-color: #FF5D92; /* Neon pink */
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 16px;
+            margin: 10px 5px; /* Space between buttons */
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background 0.3s ease;
+        }
+
+        button:hover, .cta-button:hover {
+            background-color: #F08E47; /* Orange hover effect */
+            box-shadow: 0 0 15px #F08E47; /* Glowing effect */
+        }
+
+        /* Welcome section styling */
+        .welcome-section {
+            text-align: center;
+            padding: 50px 20px;
+            flex-grow: 1; /* Allow welcome section to expand */
+        }
+
+        /* Headings styling */
+        h1 {
+            font-size: 48px;
+            color: #FF5D92; /* Neon pink for main title headings */
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        /* Footer styling */
+        footer {
+            background: transparent; /* No background color for footer */
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            border-top: 3px solid #FF5D92; /* Neon pink top border */
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Career Spark</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li>
+                <a href="#">Explore Opportunities</a>
+                <ul class="dropdown">
+                    <li><a href="careerguide.html">Career Guide</a></li>
+                    <li><a href="job.html">Job Matching</a></li>
+                    <li><a href="mentorship.html">Mentorship</a></li>
+                    <li><a href="skill training.html">Skill Training</a></li>
+                    <li><a href="freelancing.html">Freelancing</a></li>
+                    <li><a href="entrepreneurship.html">Entrepreneurship</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="welcome-section">
+    <h1>Welcome to Career Spark</h1>
+    <p>Your journey to a fulfilling career starts here. Choose the path that suits you best!</p>
+    <div class="buttons">
+        <a href="createprofile.html"><button>Create Profile</button></a>
+        <a href="login.html"><button>Log In</button></a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2024 Career Spark. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

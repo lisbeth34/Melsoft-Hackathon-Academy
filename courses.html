@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Courses - Career Spark</title>
+    <style>
+        /* General body and background */
+        body {
+            background: url('images/virtual-assistant-circle-background-purple-gradient-disruptive-technology.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #FFFFFF;
+            padding: 20px;
+        }
+
+        /* Logo styling */
+        .logo {
+            color: #FF5D92;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        /* Content section styling */
+        .section-container {
+            max-width: 1200px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #FF5D92;
+        }
+
+        h3 {
+            font-size: 28px;
+            color: #FF5D92;
+        }
+
+        p {
+            font-size: 18px;
+            margin: 15px 0;
+        }
+
+        /* Course Card Styling */
+        .course-card {
+            background: rgba(255, 93, 146, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+            transition: transform 0.2s;
+        }
+
+        .course-card:hover {
+            transform: scale(1.02);
+        }
+
+        .course-title {
+            font-size: 24px;
+            color: #FF5D92;
+            margin-bottom: 10px;
+        }
+
+        .course-description {
+            font-size: 16px;
+            margin-bottom: 15px;
+        }
+
+        /* Button styling */
+        .cta-button {
+            background-color: #FF5D92;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #F08E47;
+            box-shadow: 0 0 15px #F08E47;
+        }
+
+        /* Footer styling */
+        footer {
+            background: transparent;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            border-top: 3px solid #FF5D92;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Career Spark</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li>
+                <a href="#">Explore Opportunities</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="section-container">
+    <h2>Browse Courses and Certifications</h2>
+    <p>Explore a variety of courses designed to enhance your skills and boost your career prospects.</p>
+
+    <div class="course-card">
+        <div class="course-title">Web Development Bootcamp</div>
+        <div class="course-description">Learn to build responsive websites and web applications using HTML, CSS, and JavaScript.</div>
+        <a href="coursedetails.html">
+            <button class="cta-button">Enroll Now</button>
+        </a>
+    </div>
+
+    <div class="course-card">
+        <div class="course-title">Digital Marketing Essentials</div>
+        <div class="course-description">Understand the fundamentals of digital marketing, SEO, and social media strategies.</div>
+        <a href="coursedetails.html">
+            <button class="cta-button">Enroll Now</button>
+        </a>
+    </div>
+
+    <div class="course-card">
+        <div class="course-title">Data Science with Python</div>
+        <div class="course-description">Master data analysis, visualization, and machine learning using Python programming.</div>
+        <a href="coursedetails.html">
+            <button class="cta-button">Enroll Now</button>
+        </a>
+    </div>
+
+</section>
+
+<footer>
+    <p>&copy; 2024 Career Spark. All rights reserved.</p>
+</footer>
+
+</body>
+</html>

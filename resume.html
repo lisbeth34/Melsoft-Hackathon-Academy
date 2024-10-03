@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Your Resume - Career Spark</title>
+    <style>
+        /* General body and background */
+        body {
+            background: url('images/virtual-assistant-circle-background-purple-gradient-disruptive-technology.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #FFFFFF;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        /* Header styling */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #FFFFFF;
+            padding: 20px;
+        }
+
+        /* Logo styling */
+        .logo {
+            color: #FF5D92;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        /* Navigation styling */
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        nav ul li {
+            position: relative;
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: #FFFFFF;
+            text-decoration: none;
+            padding: 10px 15px;
+            display: block;
+        }
+
+        /* Content section styling */
+        .section-container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            border-radius: 10px;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #FF5D92;
+            text-align: center;
+        }
+
+        label {
+            font-size: 18px;
+            margin-top: 15px;
+            display: block;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #FF5D92;
+            background: rgba(255, 255, 255, 0.1);
+            color: #FFFFFF;
+        }
+
+        button {
+            background-color: #FF5D92;
+            border: none;
+            color: white;
+            padding: 15px 30px;
+            text-align: center;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 50px;
+            transition: background 0.3s ease;
+            display: block;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #F08E47;
+            box-shadow: 0 0 15px #F08E47;
+        }
+
+        /* Footer styling */
+        footer {
+            background: transparent;
+            color: #FFFFFF;
+            padding: 20px;
+            text-align: center;
+            border-top: 3px solid #FF5D92;
+        }
+
+        /* File upload styling */
+        .file-upload {
+            margin-top: 20px;
+        }
+
+        .file-upload input[type="file"] {
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #FF5D92;
+            background: rgba(255, 255, 255, 0.1);
+            color: #FFFFFF;
+        }
+
+        .file-upload label {
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+
+        /* Success message styling */
+        .success-message {
+            display: none;
+            text-align: center;
+            background-color: #28a745;
+            color: white;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="logo">Career Spark</div>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#">Dashboard</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Explore Opportunities</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="section-container">
+    <h2>Build Your Resume</h2>
+    <!-- Success message -->
+    <div class="success-message" id="successMessage">Resume Generated Successfully!</div>
+
+    <form id="resumeForm">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required>
+
+        <label for="summary">Summary/Objective:</label>
+        <textarea id="summary" name="summary" rows="4" required></textarea>
+
+        <label for="experience">Work Experience:</label>
+        <textarea id="experience" name="experience" rows="4" placeholder="Company Name, Job Title, Dates, Responsibilities" required></textarea>
+
+        <label for="education">Education:</label>
+        <textarea id="education" name="education" rows="4" placeholder="Institution Name, Degree, Dates" required></textarea>
+
+        <!-- File Upload Section -->
+        <div class="file-upload">
+            <label for="cv">Upload CV/Portfolio:</label>
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx,.ppt,.pptx,.jpg,.jpeg,.png" required>
+        </div>
+
+        <button type="submit">Generate Resume</button>
+    </form>
+</section>
+
+<footer>
+    <p>&copy; 2024 Career Spark. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById("resumeForm").addEventListener("submit", function(event){
+        event.preventDefault(); // Prevent form submission
+
+        // Show success message
+        var successMessage = document.getElementById("successMessage");
+        successMessage.style.display = "block";
+    });
+</script>
+
+</body>
+</html>
